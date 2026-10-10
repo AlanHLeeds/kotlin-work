@@ -3,5 +3,11 @@
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    // Add your code here
+    var sum = 0
+    for (i in 1..args[0].toInt()){
+        if (i % 2 != 0) {
+            sum += i
+        }
+    }
+    println(sum)
 }

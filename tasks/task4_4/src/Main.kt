@@ -9,5 +9,12 @@ import com.github.ajalt.mordant.table.table
 import com.github.ajalt.mordant.terminal.Terminal
 
 fun main(args: Array<String>) {
-    // Add your code here
+    var initialtemp = args[0].toFloat()
+    val maxtemp = args[1].toFloat()
+    val increment = args[2].toFloat()
+    while (initialtemp < maxtemp) {
+        val far = (initialtemp * 9 / 5) + 32
+        println("%.2f°C = %.2f°F".format(initialtemp, far))
+        initialtemp += increment
+    }
 }
