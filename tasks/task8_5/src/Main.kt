@@ -2,4 +2,7 @@
 
 fun main() {
     // Add your testing code here
+    val text = "Hello, World!"
+    val vowelCount = text.howMany { it in "aeiouAEIOU" }
+    println("Number of vowels in '$text': $vowelCount")
 }
