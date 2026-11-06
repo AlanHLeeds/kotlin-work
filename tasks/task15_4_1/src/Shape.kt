@@ -2,4 +2,8 @@
 
 import java.awt.Color
 
-open class Shape(val x: Int, val y: Int, val color: Color)
+open class Shape(val x: Int, val y: Int, val color: Color) {
+    open fun draw(context: Graphics2D) {
+        println("Drawing a shape at ($x, $y) with color $color")
+    }
+}
